@@ -3,10 +3,10 @@ public class Pelicula {
      private long id;
      private String nombre;
      private double puntuacion;
-     private String genero;
+     private  Genero genero;
      private String descripcion;
 
-    public Pelicula(long id, String nombre, double puntuacion, String genero, String descripcion) {
+    public Pelicula(long id, String nombre, double puntuacion, Genero genero, String descripcion) {
         this.id = id;
         this.nombre = nombre;
         this.puntuacion = puntuacion;
@@ -38,11 +38,11 @@ public class Pelicula {
         this.puntuacion = puntuacion;
     }
 
-    public String getGenero() {
+    public Genero getGenero() {
         return genero;
     }
 
-    public void setGenero(String genero) {
+    public void setGenero(Genero genero) {
         this.genero = genero;
     }
 
